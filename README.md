@@ -26,7 +26,7 @@ To Wire you can use normal JumperWires on the Caliope mini Pinout like this:
 
 Or you can use the Grove to female Pin connector with an aditional croco clamp without soldering anything
 ![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219/blob/master/Calliope_GroveWire.jpg)
-![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219/blob/master/MAX_GroveWire.jpg)
+![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219/blob/master/MAX_GroveWire2.jpg)
 
 The rest of the modules (if any) are connected basicly the same as the first one, except all module's DIN connects to DOUT on the previous one.
 
