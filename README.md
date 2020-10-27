@@ -21,12 +21,12 @@ MISO or MI is not used, but included anyway for SPI pins are reassigned together
 Of course, you can reassign these SPI pins in anyway you want; just use the setup block and remember to set the correct number of matrixs.
 
 To Wire you can use normal JumperWires on the Caliope mini Pinout like this:
-![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219_8x8/blob/master/Calliope_JumperWire.jpg)
-![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219_8x8/blob/master/MAX_JumperWire.jpg)
+![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219/blob/master/Calliope_JumperWire.jpg)
+![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219/blob/master/MAX_JumperWire.jpg)
 
 Or you can use the Grove to female Pin connector with an aditional croco clamp without soldering anything
-![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219_8x8/blob/master/Calliope_GroveWire.jpg)
-![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219_8x8/blob/master/MAX_GroveWire.jpg)
+![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219/blob/master/Calliope_GroveWire.jpg)
+![img_0003](https://github.com/r00b1nh00d/pxt-MAX7219/blob/master/MAX_GroveWire.jpg)
 
 The rest of the modules (if any) are connected basicly the same as the first one, except all module's DIN connects to DOUT on the previous one.
 
@@ -48,7 +48,7 @@ Some people use the 4-in-1 MAX7219 modules, which are 4 matrixs already linked t
 
 You can choose to rotate and reverse the display by using the following block in the advanced section:
 
-![1](https://github.com/r00b1nh00d/pxt-MAX7219_8x8/blob/master/MakecodeScreenshot2.PNG)
+![1](https://github.com/r00b1nh00d/pxt-MAX7219/blob/master/MakecodeScreenshot2.PNG)
 
 Warning: the extra rotation/reverse calculating process slow down the text scrolling/refreshing speed. You may have to reduce the scrolling delay time to 0.
 
@@ -56,7 +56,7 @@ Warning: the extra rotation/reverse calculating process slow down the text scrol
 
 There are currently two built-in display modes; first is the simple text printing mode, which use the whole LED display to show or scroll a string.
 
-![makecode-screenshot](https://github.com/r00b1nh00d/pxt-MAX7219_8x8/blob/master/MakecodeScreenshot1.PNG)
+![makecode-screenshot](https://github.com/r00b1nh00d/pxt-MAX7219/blob/master/MakecodeScreenshot1.PNG)
 
 ```blocks
 MAX7219_Matrix.setup(
