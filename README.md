@@ -89,8 +89,8 @@ You can also print a custom character or image on the LED display. Use [this 8x8
 
 ![3](https://user-images.githubusercontent.com/44191076/50700687-2261af00-1086-11e9-8451-aff7c771dc64.jpg)
 
-![microbit-screenshot 3](https://user-images.githubusercontent.com/44191076/50702213-31972b80-108b-11e9-928e-9e4a991c5dbb.png)
-
+![MakeCode-screenshot 3](https://github.com/r00b1nh00d/pxt-max7219/blob/master/MakecodeScreenshot3.PNG)
+Each line get his own Custom array like "B11111111" if you use more than one 8x8 Matrix use an offset like 8 to print it on an other module
 ```blocks
 let ChstomChr: number[] = []
 MAX7219_Matrix.setup(
@@ -150,12 +150,6 @@ Um dieses Repository in MakeCode zu bearbeiten.
 * klicke auf **Importieren** und dann auf **Importiere URL**
 * füge **https://github.com/r00b1nh00d/pxt-max7219** ein und klicke auf Importieren
 
-## Blockvorschau
-
-Dieses Bild zeigt den Blockcode vom letzten Commit im Master an.
-Die Aktualisierung dieses Bildes kann einige Minuten dauern.
-
-![Eine gerenderte Ansicht der Blöcke](https://github.com/r00b1nh00d/pxt-max7219/raw/master/.github/makecode/blocks.png)
 
 #### Metadaten (verwendet für Suche, Rendering)
 
