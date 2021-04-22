@@ -205,6 +205,36 @@ namespace max7219_matrix {
         basic.pause(endDelay)
     }
 
+    
+   //% block=Image 8x8"
+//% imageLiteral=1
+//% imageLiteralColumns=8
+//% imageLiteralRows=8
+//% shim=images::createImage
+//% group="4. Set custom LED pattern on matrixs"
+export function matrix8x8(i: string): Image {
+    const im = <Image><any>i;
+    return im
+}
+
+//% block="write image to Matrix %index %im=variables_get(image)"
+//% index.defl=1 index.min=1 index.max=7 group="4. Set custom LED pattern on matrixs"
+export function writeImage2matrix (index:number, im: Image) {
+ let line=0   
+for (let y = 0; y <= im.height() - 1; y++) {
+    for (let x = 0; x <= im.width() - 1; x++) {
+        if (im.pixel(x, y)) {
+            line=(line << 1) + 1
+             } else {
+             line=(line << 1)  
+            }
+            _registerForOne(_DIGIT[im.height()-1-y], line, _matrixNum-index)
+        }
+        line=0
+    }
+}
+    
+    
     /**
     * Print a text accross the chain of MAX7219 matrixs at a specific spot. Offset value -8 ~ last column of matrixs. You can choose to clear the screen or not (if not it can be used to print multiple string on the MAX7219 chain).
     */
